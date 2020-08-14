@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Student Name:  Anuj Narayanaswamy
+-->
+<html lang="en">
+<head>
+  <title>Web Mashup: Display House Prices on a Map</title>
+  <meta charset="utf-8"/>
+  <script type="text/javascript" src="map.js"></script>
+  <script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOKdPbDwWeXCy6qwEHhfJTVUiCYcqBAGo">
+  </script>
+</head>
+<body onload="initialize();">
+  <div align="center" style="padding:25px;">
+    <form>
+      <label>House address: <input type="text" id="address"/></label>
+      <input type="button" onclick="sendRequest();" value="Find" style=""/>
+      <input type="button" onclick="clearform();" value="Clear" style=""/>
+    </form>
+    <div class="container" style="padding: 25px;">
+      <div class="row">
+        <div class="col">
+          <div id="map" style="width: 600px; height: 500px;"></div>
+        </div>
+        <div class="col">
+          <div id="zillow_output">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
